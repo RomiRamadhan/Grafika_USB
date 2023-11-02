@@ -6,7 +6,7 @@ void display() {
     glColor3f(0.0, 0.0, 0.0);
 
     // Gambar kotak di atas
-    glColor3f(1.0, 1.0, 1.0);
+    glColor3f(0.0, 0.0, 0.0);
     glBegin(GL_QUADS);
     glVertex2f(100.0, 270.0);
     glVertex2f(360.0, 270.0);
@@ -15,7 +15,7 @@ void display() {
     glEnd();
 
     // Gambar kotak di bawah
-    glColor3f(0.0, 0.0, 1.0);
+    glColor3f(1.0, 0.0, 0.0);
     glBegin(GL_QUADS);
     glVertex2f(100.0, 130.0);
     glVertex2f(360.0, 130.0);
@@ -24,7 +24,7 @@ void display() {
     glEnd();
 
     // Gambar kotak di bawah
-    glColor3f(1.0, 0.0, 0.0);
+    glColor3f(1.0, 1.0, 0.0);
     glBegin(GL_QUADS);
     glVertex2f(100.0, 130.0);
     glVertex2f(360.0, 130.0);
@@ -36,7 +36,7 @@ void display() {
 }
 
 void myinit() {
-    glClearColor(0.0, 0.0, 0.0, 0.0);
+    glClearColor(1.0, 1.0, 1.0, 0.0);
     glColor3f(0.0, 0.0, 0.0);
     glPointSize(2.0);
     glMatrixMode(GL_PROJECTION);
@@ -49,11 +49,11 @@ int main(int argc, char** argv) {
     glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
     glutInitWindowSize(700, 500);
     glutInitWindowPosition(5, 10);
-    glutCreateWindow("BENDERA RUSIA");
+    glutCreateWindow("BENDERA JERMAN");
     glutDisplayFunc(display);
 
     myinit();
     glutMainLoop();
 
-    return 0;
+    return 0;
 }
